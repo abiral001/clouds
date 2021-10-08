@@ -1,0 +1,20 @@
+{
+    "raiden" : {
+        "element" : "Electro",
+        "weapoon" : "Polearm",
+        "gender" : "Female",
+        "role" : "Burst DPS"
+    },
+    "zhongli" : {
+        "element" : "Geo",
+        "weapoon" : "Polearm",
+        "gender" : "Male",
+        "role" : "Support"
+    },
+    "venti" : {
+        "element" : "Anemo",
+        "weapoon" : "Bow",
+        "gender" : "Male",
+        "role" : "Support"
+    }
+}
