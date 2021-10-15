@@ -1,0 +1,174 @@
+{
+    "amber" : {
+        "element" : "pyro",
+        "released" : "true"
+    },
+    "barbara" : {
+        "element" : "hydro",
+        "released" : "true"
+    },
+    "beidou" : {
+        "element" : "electro",
+        "released" : "true"
+    },
+    "bennett" : {
+        "element" : "pyro",
+        "released" : "true"
+    },
+    "chongyun" : {
+        "element" : "cryo",
+        "released" : "true"
+    },
+    "diluc" : {
+        "element" : "pyro",
+        "released" : "true"
+    },
+    "fischl" : {
+        "element" : "electro",
+        "released" : "true"
+    },
+    "jean" : {
+        "element" : "anemo",
+        "released" : "true"
+    },
+    "kaeya" : {
+        "element" : "cryo",
+        "released" : "true"
+    },
+    "keqing" : {
+        "element" : "electro",
+        "released" : "true"
+    },
+    "klee" : {
+        "element" : "pyro",
+        "released" : "true"
+    },
+    "lisa" : {
+        "element" : "electro",
+        "released" : "true"
+    },
+    "mona" : {
+        "element" : "hydro",
+        "released" : "true"
+    },
+    "ningguang" : {
+        "element" : "geo",
+        "released" : "true"
+    },
+    "noelle" : {
+        "element" : "geo",
+        "released" : "true"
+    },
+    "qiqi" : {
+        "element" : "cryo",
+        "released" : "true"
+    },
+    "razor" : {
+        "element" : "electro",
+        "released" : "true"
+    },
+    "sucrose" : {
+        "element" : "anemo",
+        "released" : "true"
+    },
+    "venti" : {
+        "element" : "anemo",
+        "released" : "true"
+    },
+    "xiangling" : {
+        "element" : "pyro",
+        "released" : "true"
+    },
+    "xiao" : {
+        "element" : "anemo",
+        "released" : "true"
+    },
+    "xingqiu" : {
+        "element" : "hydro",
+        "released" : "true"
+    },
+    "tartaglia" : {
+        "element" : "hydro",
+        "released" : "true"
+    },
+    "zhongli" : {
+        "element" : "geo",
+        "released" : "true"
+    },
+    "diona" : {
+        "element" : "cryo",
+        "released" : "true"
+    },
+    "xinyan" : {
+        "element" : "pyro",
+        "released" : "true"
+    },
+    "ganyu" : {
+        "element" : "cryo",
+        "released" : "true"
+    },
+    "albedo" : {
+        "element" : "geo",
+        "released" : "true"
+    },
+    "rosaria" : {
+        "element" : "cryo",
+        "released" : "true"
+    },
+    "ayaka" : {
+        "element" : "cryo",
+        "released" : "true"
+    },
+    "hu-tao" : {
+        "element" : "pyro",
+        "released" : "true"
+    },
+    "yanfei" : {
+        "element" : "pyro",
+        "released" : "true"
+    },
+    "eula" : {
+        "element" : "cryo",
+        "released" : "true"
+    },
+    "kazuha" : {
+        "element" : "anemo",
+        "released" : "true"
+    },
+    "yoimiya" : {
+        "element" : "pyro",
+        "released" : "true"
+    },
+    "sayu" : {
+        "element" : "anemo",
+        "released" : "true"
+    },
+    "raiden" : {
+        "element" : "electro",
+        "released" : "true"
+    },
+    "kokomi" : {
+        "element" : "hydro",
+        "released" : "true"
+    },
+    "aloy" : {
+        "element" : "cryo",
+        "released" : "true"
+    },
+    "sara" : {
+        "element" : "electro",
+        "released" : "true"
+    },
+    "thoma" : {
+        "element" : "pyro",
+        "released" : "false"
+    },
+    "itto" : {
+        "element" : "geo",
+        "released" : "false"
+    },
+    "gorou" : {
+        "element" : "geo",
+        "released" : "false"
+    }
+}
