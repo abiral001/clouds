@@ -1,174 +1,303 @@
 {
     "amber" : {
         "element" : "pyro",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Noblese Oblige or Crimson Witch",
+        "weapons": "Elegy for the End, The Stringless",
+        "substat": "Sands-ATK%, Goblet-Pyro DMG%, Circlet-Crit"
     },
     "barbara" : {
         "element" : "hydro",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Maiden Beloved x4, Maiden Beloved x2 + Tenacity x2",
+        "weapons": "Everlasting Moonglow, Prototype Amber, Thrilling Tales of Dragon Slayers",
+        "substat": "Sands-HP% or Energy Recharge, Goblet-HP%, Circlet-Healing Bonus"
     },
     "beidou" : {
         "element" : "electro",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Emblem of Severed Fate x4",
+        "weapons": "Skyward Pride, Wolf's Gravestone, Favonius Greatsword, Katsuragikiri Nagamasha",
+        "substat": "Sands-ATK% or Energy Recharge, Goblet-Electro DMG%, Circlet-Crit"
     },
     "bennett" : {
         "element" : "pyro",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Crimson Witch x4, Noblese Oblige x4, Tenacity x2 + Emblem of Severed Fate x2",
+        "weapons": "Skyward Blade, Alley Flash, Festering Desire, Favonius Sword",
+        "substat": "Sands-Energy Recharge, Goblet-HP%, Circlet-Healing Bonus"
     },
     "chongyun" : {
         "element" : "cryo",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Blizzard Strayer x4",
+        "weapons": "Wolf's Gravestone, Prototype Archaic, Blackcliff Slasher",
+        "substat": "Sands-ATK%, Goblet-Cryo DMG%, Circlet-Crit"
     },
     "diluc" : {
         "element" : "pyro",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Crimson Witch x4",
+        "weapons": "Wolf's Gravestone, Blackcliff Slasher",
+        "substat": "Sands-ATK% or Elementary Mastery, Goblet-Pyro DMG%, Circlet-Crit"
     },
     "fischl" : {
         "element" : "electro",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Thudering Fury x4, Thundersoother x4",
+        "weapons": "Elegy for the End, The Stringless",
+        "substat": "Sands-Energy Recharge or ATK%, Goblet-Electro DMG%, Circlet-Crit"
     },
     "jean" : {
         "element" : "anemo",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Veridescent Venerer x4",
+        "weapons": "Aquila Favonia, Skyward Sword, Favonius Sword",
+        "substat": "Sands-Energy Recharge or ATK%, Goblet-ATK%, Circlet-Healing Bonus"
     },
     "kaeya" : {
         "element" : "cryo",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Blizzard Strayer x4",
+        "weapons": "Summit Shaper, Mistsplitter Reforged, The Flute, Alley Flash",
+        "substat": "Sands-ATK%, Goblet-Cryo DMG%, Circlet-Crit"
     },
     "keqing" : {
         "element" : "electro",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Thundering Fury x2 + Gladiator's Finale x2, Thundersoother x4",
+        "weapons": "Primordial Jade Cutter, The Flute, Blackcliff Longsword",
+        "substat": "Sands-ATK%, Goblet-Electro DMG% or Physical DMG%, Circlet-Crit"
     },
     "klee" : {
         "element" : "pyro",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Crimson Witch x4",
+        "weapons": "Skyward Atlas, Lost Prayer, Dodoco Tales, The Widsith",
+        "substat": "Sands-ATK%, Goblet-Pyro DMG%, Circlet-Crit"
     },
     "lisa" : {
         "element" : "electro",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Noblese Oblige x4",
+        "weapons": "Thrilling Tales of Dragon Slayers",
+        "substat": "Sands-Energy Recharge%, Goblet-Electro DMG%, Circlet-Crit"
     },
     "mona" : {
         "element" : "hydro",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Emblem of Severed Fate x4, Heart of Depth x4",
+        "weapons": "Skyward Atlas, The Widsith",
+        "substat": "Sands-ATK% or Energy Recharge, Goblet-Hydro DMG%, Circlet-Crit"
     },
     "ningguang" : {
         "element" : "geo",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Archaic Petra x2 + Gladiator's Finale x2",
+        "weapons": "Memory of Dust, Skyward Atlas, The Widsith, Blackcliff Agate",
+        "substat": "Sands-ATK%, Goblet-Geo DMG%, Circlet-Crit"
     },
     "noelle" : {
         "element" : "geo",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Retracing Bolide x4",
+        "weapons": "Skyward Pride, Whiteblind",
+        "substat": "Sands-DEF% or Energy Recharge, Goblet-Geo DMG%, Circlet-Crit"
     },
     "qiqi" : {
         "element" : "cryo",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Emblem of Severed Fate x2 + Gladiator's Finale x2",
+        "weapons": "Aquila Favonia, Skyward Sword, Sacrificial Sword, Favonius Sword",
+        "substat": "Sands-ATK%, Goblet-ATK%, Circlet-Healing Bonus"
     },
     "razor" : {
         "element" : "electro",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Pale Flame x4",
+        "weapons": "Song of Broken Pines, Wolf's Gravestone, Snow-Tombed Starsilver",
+        "substat": "Sands-ATK%, Goblet-Physical DMG%, Circlet-Crit"
     },
     "sucrose" : {
         "element" : "anemo",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Veridescent Venerer x4",
+        "weapons": "Sacrificial Fragments",
+        "substat": "Sands-Elementary Mastery, Goblet-Elementary Mastery, Circlet-Elementary Mastery"
     },
     "venti" : {
         "element" : "anemo",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Veridescent Venerer x4",
+        "weapons": "Elegy for the End, Skyward Harp, The Stringless",
+        "substat": "Sands-ATK% or Elementary Mastery, Goblet-Anemo DMG%, Circlet-Crit or Elementary Mastery"
     },
     "xiangling" : {
         "element" : "pyro",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Crimson Witch x4, Emblem of Severed Fate x4",
+        "weapons": "Skyward Spine, Staff of Homa, Primordial Jade Spear, The Catch, Dragon's Bane, Kitain Cross Spear",
+        "substat": "Sands-ATK% or Energy Recharge or Elementary Mastery, Goblet-Pyro DMG%, Circlet-Crit"
     },
     "xiao" : {
         "element" : "anemo",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Veridescent Venerer x2 + Gladiator's Finale x2",
+        "weapons": "Staff of Homa, Primordial Jade Spear, Lithic Spear, Blackcliff Pole",
+        "substat": "Sands-ATK%, Goblet-Anemo DMG%, Circlet-Crit"
     },
     "xingqiu" : {
         "element" : "hydro",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Emblem of Severed Fate",
+        "weapons": "Sacrificial Sword",
+        "substat": "Sands-Energy Recharge, Goblet-Hydro DMG%, Circlet-Crit"
     },
     "tartaglia" : {
         "element" : "hydro",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Heart of Depth x4, Shimenawa's Rememberance x4",
+        "weapons": "Polar Star, Thundering Pulse, Skyward Harp, Rust",
+        "substat": "Sands-ATK%, Goblet-Hydro DMG%, Circlet-Crit"
     },
     "zhongli" : {
         "element" : "geo",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Tenacity x4",
+        "weapons": "Staff of Homa, Favonius Spear, The Catch, Black Tassle",
+        "substat": "Sands-HP%, Goblet-Geo DMG% or HP%, Circlet-Crit or HP%"
     },
     "diona" : {
         "element" : "cryo",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Emblem of Severed Fate x4, Maiden's Beloved x4",
+        "weapons": "Sacrificial Bow, Favonius Bow",
+        "substat": "Sands-Energy Recharge, Goblet-HP%, Circlet-Healing Bonus"
     },
     "xinyan" : {
         "element" : "pyro",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Emblem of Severed Fate x4",
+        "weapons": "Song of Broken Pine, Snow-Tombed Starsilver",
+        "substat": "Sands-ATK%, Goblet-Physical DMG%, Circlet-Crit"
     },
     "ganyu" : {
         "element" : "cryo",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Wanderer's Troupe x4, Shimenawa's Rememberance x4",
+        "weapons": "Amos Bow, Skyward Harp, Prototype Crescent",
+        "substat": "Sands-ATK%, Goblet-Cryo DMG%, Circlet-Crit"
     },
     "albedo" : {
         "element" : "geo",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Archaic Petra x4",
+        "weapons": "Harbinger of Dawn",
+        "substat": "Sands-DEF%, Goblet-Geo DMG%, Circlet-Crit"
     },
     "rosaria" : {
         "element" : "cryo",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Blizzard Strayer x4",
+        "weapons": "Skyward Spine, Staff of Homa, Prototype Starglitter, The Catch",
+        "substat": "Sands-ATK%, Goblet-Cryo DMG%, Circlet-Crit"
     },
     "ayaka" : {
         "element" : "cryo",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Blizzard Strayer x4",
+        "weapons": "Mistsplitter Reforged, Summit Shaper, Anemona Kageuchi, Blackcliff Longsword",
+        "substat": "Sands-ATK%, Goblet-Cryo DMG%, Circlet-Crit"
     },
     "hu-tao" : {
         "element" : "pyro",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Crimson Witch x2 + Tenacity x2",
+        "weapons": "Staff of Homa, Blackcliff Pole, White Tassle",
+        "substat": "Sands-HP%, Goblet-Pyro DMG%, Circlet-Crit"
     },
     "yanfei" : {
         "element" : "pyro",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Crimson Witch x4",
+        "weapons": "Skyward Atlas, Lost Prayer, The Widsith, Dodoco Tales, Blackcliff Agate",
+        "substat": "Sands-ATK%, Goblet-Pyro DMG%, Circlet-Crit"
     },
     "eula" : {
         "element" : "cryo",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Pale Flame x4",
+        "weapons": "Song of Broken Pine, Wolf's Gravestone, Snow-Tombed Starsilver",
+        "substat": "Sands-ATK%, Goblet-Physical DMG%, Circlet-Crit"
     },
     "kazuha" : {
         "element" : "anemo",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Veridescent Venerer x4",
+        "weapons": "Freedom Sword, Iron Sting",
+        "substat": "Sands-Elementary Mastery, Goblet-Anemo DMG%, Circlet-Elementary Mastery"
     },
     "yoimiya" : {
         "element" : "pyro",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Shimenawa's Rememberance x4",
+        "weapons": "Thundering Pulse, Skyward Harp, Hamayumi",
+        "substat": "Sands-ATK%, Goblet-Pyro DMG%, Circlet-Crit"
     },
     "sayu" : {
         "element" : "anemo",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Veridescent Venerer x2 + Emblem of Severed Fate x2",
+        "weapons": "Wolf's Gravestone, Favonius Greatsword",
+        "substat": "Sands-ATK%, Goblet-Anemo DMG%, Circlet-Healing Bonus"
     },
     "raiden" : {
         "element" : "electro",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Emblem of Severed Fate x4",
+        "weapons": "Engulfing Lightning, The Catch, Primordial Jade Spear",
+        "substat": "Sands-Energy Recharge, Goblet-ATK%, Circlet-Crit"
     },
     "kokomi" : {
         "element" : "hydro",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Heart of Depth x2 + Maiden's Beloved x2, Maiden's Beloved x2 + Tenacity x2",
+        "weapons": "Everlasting Moonglow, Prototype Amber",
+        "substat": "Sands-HP%, Goblet-Hydro DMG%, Circlet-Healing Bonus"
     },
     "aloy" : {
         "element" : "cryo",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Noblese Oblige x4",
+        "weapons": "Skyward Harp, Amos Bow, The Stringless, Windblume Ode",
+        "substat": "Sands-ATK%, Goblet-Cryo DMG%, Circlet-Crit"
     },
     "sara" : {
         "element" : "electro",
-        "released" : "true"
+        "released" : "true",
+        "artifacts" : "Noblese Oblige x2 + Emblem of Severed Fate x2",
+        "weapons": "Elegy for the End, Skyward Harp, Favonius Warbow",
+        "substat": "Sands-Energy Recharge, Goblet-Electro DMG%, Circlet-Crit"
     },
     "thoma" : {
         "element" : "pyro",
-        "released" : "false"
+        "released" : "false",
+        "artifacts" : "Noblese Oblige, Crimson Witch",
+        "weapons": "Elegy for the End > The Stringless",
+        "substat": "Sands-ATK%, Goblet-Pyro DMG%, Circlet-Crit"
     },
     "itto" : {
         "element" : "geo",
-        "released" : "false"
+        "released" : "false",
+        "artifacts" : "Noblese Oblige, Crimson Witch",
+        "weapons": "Elegy for the End > The Stringless",
+        "substat": "Sands-ATK%, Goblet-Pyro DMG%, Circlet-Crit"
     },
     "gorou" : {
         "element" : "geo",
-        "released" : "false"
+        "released" : "false",
+        "artifacts" : "Noblese Oblige, Crimson Witch",
+        "weapons": "Elegy for the End > The Stringless",
+        "substat": "Sands-ATK%, Goblet-Pyro DMG%, Circlet-Crit"
     }
 }

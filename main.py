@@ -23,8 +23,19 @@ async def on_message(message):
     
     if message.content.startswith('!gbuild'):
         # await message.channel.send('Hello! {0}'.format(message.author))
+        print("Request accepted from {}".format(message.author))
         all_data = get_data(message.content.split(' ')[1].lower())
-        await message.channel.send(all_data)
+        display_data = [
+            "Name: {}, Element: {}".format(all_data[0], all_data[1][0].upper()+all_data[1][1:]),
+            "At Level 90",
+            "============",
+            "Base HP: {}, Base ATK: {}, Base DEF:{}, {}:{}".format(all_data[3], all_data[4], all_data[5], all_data[2], all_data[6]),
+            "Recommended Artifacts: {}".format(all_data[7]),
+            "Recommended Mainstat: {}".format(all_data[9]),
+            "Recommended Weapons: {}".format(all_data[8])
+        ]
+        for one_data in display_data:
+            await message.channel.send(one_data)
 
     # Working on valorant agents
     if message.content.startswith('!vagent'):
@@ -40,6 +51,10 @@ def get_data(character):
         return "No character with such a name found"
     element = json_data[character]['element']
     released = json_data[character]['released']
+    artifacts = json_data[character]['artifacts']
+    weapons = json_data[character]['weapons']
+    substat = json_data[character]['substat']
+
     if released == 'false':
         return "Character is not released or not computed on. No data to show"
 
@@ -51,7 +66,8 @@ def get_data(character):
     base_atk = [r.strip() for r in soup.select_one('div > div:nth-child(8) > div > div:nth-child(3) > div > div > div > div > div > div > div > span > span')]
     base_def = [r.strip() for r in soup.select_one('div > div:nth-child(8) > div > div:nth-child(4) > div > div > div > div > div > div > div > span > span')]
     ascension_stat_num = [r.strip() for r in soup.select_one('div > div:nth-child(8) > div > div:nth-child(5) > div > div > div > div > div > div > div > span > span')]
-
-    return [actual_name[0], ascension_stat[0], base_hp[0], base_atk[0], base_def[0], ascension_stat_num[0]]
+    if character.lower() == 'kokomi':
+        ascension_stat = ['Hydro DMG%']
+    return [actual_name[0], element, ascension_stat[0], base_hp[0], base_atk[0], base_def[0], ascension_stat_num[0], artifacts, weapons, substat]
 
 client.run(os.getenv('TOKEN'))
