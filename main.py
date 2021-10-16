@@ -25,6 +25,9 @@ async def on_message(message):
         # await message.channel.send('Hello! {0}'.format(message.author))
         print("Request accepted from {}".format(message.author))
         all_data = get_data(message.content.split(' ')[1].lower())
+        if all_data["message"] != None:
+            await message.channel.send(all_data["message"])
+            return
         display_data = [
             "Name: {}, Element: {}".format(all_data[0], all_data[1][0].upper()+all_data[1][1:]),
             "At Level 90",
@@ -48,7 +51,7 @@ def get_data(character):
     if character == 'hutao':
         character = 'hu-tao'
     if not character in json_data.keys():
-        return "No character with such a name found"
+        return {"message": "No character with such a name found. Please put the actual name of the character"}
     element = json_data[character]['element']
     released = json_data[character]['released']
     artifacts = json_data[character]['artifacts']
@@ -56,7 +59,7 @@ def get_data(character):
     substat = json_data[character]['substat']
 
     if released == 'false':
-        return "Character is not released or not computed on. No data to show"
+        return {"message": "Character is not released or not computed on. No data to show"}
 
     response = requests.get(url = "{}/{}/{}".format(URL_GENSHIN_CHARS, element, character.lower()))
     soup = BeautifulSoup(response.content, 'html.parser')
@@ -68,6 +71,8 @@ def get_data(character):
     ascension_stat_num = [r.strip() for r in soup.select_one('div > div:nth-child(8) > div > div:nth-child(5) > div > div > div > div > div > div > div > span > span')]
     if character.lower() == 'kokomi':
         ascension_stat = ['Hydro DMG%']
-    return [actual_name[0], element, ascension_stat[0], base_hp[0], base_atk[0], base_def[0], ascension_stat_num[0], artifacts, weapons, substat]
-
+    returning = [actual_name[0], element, ascension_stat[0], base_hp[0], base_atk[0], base_def[0], ascension_stat_num[0], artifacts, weapons, substat]
+    return_data = {key: value for key, value in enumerate(returning)}
+    return_data["message"] = None
+    return return_data
 client.run(os.getenv('TOKEN'))
