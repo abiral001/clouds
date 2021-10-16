@@ -4,6 +4,8 @@ from dotenv import load_dotenv
 import requests
 from bs4 import BeautifulSoup
 import json
+import genimp.gtalent
+import val.agents
 
 URL_GENSHIN_CHARS = "https://library.keqingmains.com/characters"
 client = discord.Client()
@@ -46,7 +48,7 @@ async def on_message(message):
 
 def get_data(character):
 
-    json_data = open('./gdata.json', 'r+')
+    json_data = open('./genimp/gdata.json', 'r+')
     json_data = json.load(json_data)
     if character == 'hutao':
         character = 'hu-tao'
