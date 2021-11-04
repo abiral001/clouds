@@ -8,6 +8,7 @@ import genimp.gtalent as get
 import val.agents as vaa
 
 URL_GENSHIN_CHARS = "https://library.keqingmains.com/characters"
+DIFF_CSS = ['kokomi', 'thoma', 'mona']
 client = discord.Client()
 load_dotenv()
 
@@ -84,7 +85,7 @@ def get_data(character):
     soup = BeautifulSoup(response.content, 'html.parser')
     actual_name = [r.strip() for r in soup.select_one('div > span:nth-child(3) > span')]
 
-    if character.lower() == 'kokomi' or character.lower() == 'thoma':
+    if character.lower() in DIFF_CSS:
         ascension_stat = [r.strip() for r in soup.select_one('#root > div > div > div > div.css-1dbjc4n.r-14lw9ot.r-13awgt0 > div > div > div > div.css-1dbjc4n.r-1ro0kt6.r-18u37iz.r-16y2uox.r-1wbh5a2.r-1777fci > div > div:nth-child(2) > div.css-1dbjc4n.r-bnwqim > div:nth-child(2) > div:nth-child(4) > div > div > div > div > div.css-1dbjc4n.r-150rngu.r-156hn8l.r-z2wwpe.r-rs99b7.r-18u37iz.r-16y2uox.r-1wbh5a2.r-lltvgl.r-buy8e9.r-1sncvnh > div > div:nth-child(1) > div:nth-child(5) > div')]
     else:
         ascension_stat = [r.strip() for r in soup.select_one('div > div:nth-child(1) > div:nth-child(5) > div > div > div > span > span')]
