@@ -281,10 +281,10 @@
     },
     "thoma" : {
         "element" : "pyro",
-        "released" : "false",
-        "artifacts" : "Noblese Oblige, Crimson Witch",
-        "weapons": "Elegy for the End > The Stringless",
-        "substat": "Sands-ATK%, Goblet-Pyro DMG%, Circlet-Crit"
+        "released" : "true",
+        "artifacts" : "Tenacity x2 + Emblem of Severed Fate x2",
+        "weapons": "Staff of Homa, Prototype Starglitter, Favonius Spear, Black Tassel",
+        "substat": "Sands-HP%, Goblet-Pyro DMG%, Circlet-Crit"
     },
     "itto" : {
         "element" : "geo",
