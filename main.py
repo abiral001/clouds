@@ -59,40 +59,61 @@ async def on_message(message):
         if all_data['message'] != "null":
             await message.channel.send(all_data["message"])
             return
-        await message.channel.send("Building for {}:".format(all_data['character'].replace('_', ' ')))
+        await message.channel.send("Building for {}:".format(all_data['character'].replace('_', ' ').title()))
         for one_role in all_data['content']['roles']:
-            await message.channel.send("For the role of {}:".format(one_role))
+            await message.channel.send("For the role of {}:".format(one_role.title()))
             await message.channel.send("=====================================")
             await message.channel.send("Weapons: (Order is best to worst)")
             weapons = all_data["content"]["roles"][one_role]["weapons"]
+            all_msg = str()
             for one_weapon in weapons:
-                await message.channel.send(one_weapon["id"].replace('_', ' '))
+                all_msg += "{} > ".format(one_weapon["id"].replace('_', ' ').title())
+            await message.channel.send(all_msg)
             await message.channel.send("-------------------------------------")
             await message.channel.send("Artifacts: (Order is best to worst)")
             artifacts = all_data["content"]["roles"][one_role]["artifacts"]
-            for one_artifact in artifacts:
-                await message.channel.send(one_artifact)
+            all_msg = str()
+            for idx, one_artifact in enumerate(artifacts):
+                all_msg += "{}: ".format(idx+1)
+                for art_set in one_artifact:
+                    all_msg += "{}, ".format(art_set.replace('_', ' ').title())
+                all_msg += "\n"
+            await message.channel.send(all_msg)
             await message.channel.send("-------------------------------------")
             await message.channel.send("Artifact Main Stat:")
             mainStats = all_data["content"]["roles"][one_role]["mainStats"]
-            await message.channel.send(mainStats)
+            all_msg = str()
+            for key in mainStats.keys():
+                all_msg += "{} = {}, ".format(key.title(), mainStats[key])
+            await message.channel.send(all_msg)
             await message.channel.send("-------------------------------------")
             await message.channel.send("Artifact Sub Stat:")
             subStats = all_data["content"]["roles"][one_role]["subStats"]
-            await message.channel.send(subStats)
+            all_msg = str()
+            for subst in subStats:
+                all_msg += "{} > ".format(subst)
+            await message.channel.send(all_msg)
             await message.channel.send("-------------------------------------")
             await message.channel.send("Talent Priority:")
             talent = all_data["content"]["roles"][one_role]["talent"]
-            await message.channel.send(talent)
-            # await message.channel.send("-------------------------------------")
-            # await message.channel.send("Tips:")
-            # tip = all_data["content"]["roles"][one_role]["tip"]
-            # await message.channel.send(tip)
-            # await message.channel.send("-------------------------------------")
-            # await message.channel.send("Note:")
-            # note = all_data["content"]["roles"][one_role]["note"]
-            # await message.channel.send(note)
+            all_msg = str()
+            for each_talent in talent:
+                all_msg += "{} > ".format(each_talent)
+            await message.channel.send(all_msg)
+            await message.channel.send("-------------------------------------")
+            await message.channel.send("Tips:")
+            tip = all_data["content"]["roles"][one_role]["tip"]
+            tip = split_long_text(tip)
+            for one_tip in tip:
+                await message.channel.send(one_tip)
+            await message.channel.send("-------------------------------------")
+            await message.channel.send("Note:")
+            note = all_data["content"]["roles"][one_role]["note"]
+            note = split_long_text(note)
+            for one_note in note:
+                await message.channel.send(one_note)
             await message.channel.send("=====================================")
+        await message.channel.send("Build request complete")
     
     if message.content.startswith('!gtalent'):
         await message.channel.send('Genshin Impact characters talent are being worked on. Stay Tuned :)')
@@ -100,6 +121,14 @@ async def on_message(message):
     # Working on valorant agents
     if message.content.startswith('!vagent'):
         await message.channel.send('Valorant agents are being worked on. Please stay tuned {}. :)'.format(str(message.author).split('#')[0]))
+
+def split_long_text(text):
+    if len(text) == 0:
+        return ["No data"]
+    if len(text) < 2000:
+        return [text]
+    split_chunk = [text[begin:begin+2000] for begin in range(0, len(text), 2000)]    
+    return split_chunk
 
 def parse_data(character, all_data):
     if character in ALTERED_NAMES.keys():
