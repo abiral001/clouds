@@ -7,7 +7,7 @@ import json
 import genimp.genbase as geb
 import val.agents as vaa
 
-URL_GENSHIN_CHARS = "https://paimon.moe/client/build.fc5db9a5.js"
+URL_GENSHIN_CHARS = "https://paimon.moe/client/build.2394ca67.js"
 ALTERED_NAMES = {
     'kokomi': 'sangonomiya_kokomi',
     'hutao': 'hu_tao',
